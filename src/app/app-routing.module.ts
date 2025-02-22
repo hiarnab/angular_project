@@ -8,6 +8,7 @@ import { TeamComponent } from './team/team.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AppoinmentlistComponent } from './appoinmentlist/appoinmentlist.component';
 
 const routes: Routes = [
   { 
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'appointment',
     component:AppointmentComponent
+  },
+  {
+    path:"appoinmentlist",
+    component:AppoinmentlistComponent
   },
   {
     path:'testimonial',

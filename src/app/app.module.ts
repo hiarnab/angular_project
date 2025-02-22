@@ -13,6 +13,10 @@ import { TeamComponent } from './team/team.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AppoinmentlistComponent } from './appoinmentlist/appoinmentlist.component';
+import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TeamComponent,
     AppointmentComponent,
     TestimonialComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AppoinmentlistComponent,
+    AppoinmentviewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
