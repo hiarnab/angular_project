@@ -21,4 +21,8 @@ export class AppoinmentService extends BaseDataServiceService{
     return this.GetRequest(this.http,"appoinment/list");
    }
 
+   DetailsAppoinment(id:any)
+   {
+    return this.GetRequest(this.http,"appoinment/view/"+id);
+   }
 }

@@ -13,7 +13,7 @@
         <div class="form-group col-md-3">{{x.doctor}}</div>
         <div class="form-group col-md-3">{{x.email}}</div>
         <div class="form-group col-md-3">
-            <button class="btn btn-primary" (click)="appointmentlist(x)">View</button>
+            <a routerLink="/appoinment/details/{{x.id}}" class="btn btn-primary">View</a>
         </div>
     </div>
 </div>
