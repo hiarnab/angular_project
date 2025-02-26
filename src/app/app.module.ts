@@ -17,6 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppoinmentlistComponent } from './appoinmentlist/appoinmentlist.component';
 import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.component';
+import { AppoinmenteditComponent } from './appoinmentedit/appoinmentedit.component';
+import { AppoinmentupdateComponent } from './appoinmentupdate/appoinmentupdate.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.compone
     TestimonialComponent,
     NotFoundComponent,
     AppoinmentlistComponent,
-    AppoinmentviewComponent
+    AppoinmentviewComponent,
+    AppoinmenteditComponent,
+    AppoinmentupdateComponent
   ],
   imports: [
     BrowserModule,
