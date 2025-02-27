@@ -16,6 +16,7 @@ export class AppoinmenteditComponent implements OnInit{
     description:new FormControl(''),
     email:new FormControl(''),
     phone:new FormControl(''),
+    created_at:new FormControl(''),
   });
 
   constructor(private appoinment:AppoinmentService, private router:ActivatedRoute){
