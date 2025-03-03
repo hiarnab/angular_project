@@ -1,10 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angularproject';
+  showHeader:number = 1;
+  currentUrl:string = "";
+   constructor(private router:Router){}
+   ngOnInit(): void {
+  
+    this.router.events.subscribe(value => {
+      console.log('current route: ', this.router.url.toString());
+      if(this.router.url.toString() == "/login")
+        {
+          this.showHeader = 0;
+          console.log(this.showHeader);
+        }else{
+          this.showHeader = 1;
+        }
+  });
+    
+   }
+
 }
