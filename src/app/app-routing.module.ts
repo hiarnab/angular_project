@@ -11,7 +11,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AppoinmentlistComponent } from './appoinmentlist/appoinmentlist.component';
 import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.component';
 import { AppoinmenteditComponent } from './appoinmentedit/appoinmentedit.component';
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { 
@@ -56,11 +55,6 @@ const routes: Routes = [
   {
     path:'appoinment/edit/:id',
     component:AppoinmenteditComponent
-  },
-  {
-    path:'login',
-    component:LoginComponent
-
   },
   // This is for wildcard route
   {

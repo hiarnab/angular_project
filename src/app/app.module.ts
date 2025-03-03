@@ -19,7 +19,6 @@ import { AppoinmentlistComponent } from './appoinmentlist/appoinmentlist.compone
 import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.component';
 import { AppoinmenteditComponent } from './appoinmentedit/appoinmentedit.component';
 import { AppoinmentupdateComponent } from './appoinmentupdate/appoinmentupdate.component';
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +36,7 @@ import { LoginComponent } from './login/login.component';
     AppoinmentlistComponent,
     AppoinmentviewComponent,
     AppoinmenteditComponent,
-    AppoinmentupdateComponent,
-    LoginComponent
+    AppoinmentupdateComponent
   ],
   imports: [
     BrowserModule,
