@@ -20,6 +20,7 @@ import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.compone
 import { AppoinmenteditComponent } from './appoinmentedit/appoinmentedit.component';
 import { AppoinmentupdateComponent } from './appoinmentupdate/appoinmentupdate.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LoginComponent } from './login/login.component';
     AppoinmentviewComponent,
     AppoinmenteditComponent,
     AppoinmentupdateComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

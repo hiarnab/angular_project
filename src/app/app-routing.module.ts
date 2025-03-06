@@ -12,6 +12,7 @@ import { AppoinmentlistComponent } from './appoinmentlist/appoinmentlist.compone
 import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.component';
 import { AppoinmenteditComponent } from './appoinmentedit/appoinmentedit.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { 
@@ -61,6 +62,10 @@ const routes: Routes = [
     path:'login',
     component:LoginComponent
 
+  },
+  {
+    path:'dashboard',
+    component:DashboardComponent
   },
   // This is for wildcard route
   {
