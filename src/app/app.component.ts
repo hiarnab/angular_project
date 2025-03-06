@@ -10,7 +10,9 @@ import { filter } from 'rxjs';
 export class AppComponent implements OnInit {
   title = 'angularproject';
   showHeader:number = 1;
+  showFooter:number = 1;
   currentUrl:string = "";
+  // currentUrl2:string = "";
    constructor(private router:Router){}
    ngOnInit(): void {
   
@@ -19,12 +21,15 @@ export class AppComponent implements OnInit {
       if(this.router.url.toString() == "/login")
         {
           this.showHeader = 0;
+          this.showFooter = 0;
           console.log(this.showHeader);
+          console.log(this.showFooter);
         }else{
           this.showHeader = 1;
+          this.showFooter = 1;
         }
   });
-    
+
    }
 
 }
