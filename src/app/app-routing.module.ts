@@ -13,6 +13,7 @@ import { AppoinmentviewComponent } from './appoinmentview/appoinmentview.compone
 import { AppoinmenteditComponent } from './appoinmentedit/appoinmentedit.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { authGuard } from './auth.guard';
 
 const routes: Routes = [
   { 
@@ -61,10 +62,9 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent
-
   },
   {
-    path:'dashboard',
+    path:'dashboard',canActivate:[authGuard],
     component:DashboardComponent
   },
   // This is for wildcard route
